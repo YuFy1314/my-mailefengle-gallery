@@ -100,7 +100,7 @@ export default {
 }
 
 </script>
-<style lang="less">
-@import "../assets/less/footer.less";
+<style>
+
 
 </style>

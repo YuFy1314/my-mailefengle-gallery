@@ -42,27 +42,6 @@ export default {
 
 </script>
 <style>
-.mu-paper {
-    background: -webkit-linear-gradient(left, #84c361, #3260af);
-    background: -moz-linear-gradient(left, #84c361, #3260af);
-    background: -o-linear-gradient(left, #84c361, #3260af);
-    background: linear-gradient(left, #84c361, #3260af);
-}
-
-#header {
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    background: -webkit-linear-gradient(left, #84c361, #3260af);
-    background: -moz-linear-gradient(left, #84c361, #3260af);
-    background: -o-linear-gradient(left, #84c361, #3260af);
-    background: linear-gradient(left, #84c361, #3260af);
-}
-
 #header>div {
     width: 50px;
     height: 100%;
