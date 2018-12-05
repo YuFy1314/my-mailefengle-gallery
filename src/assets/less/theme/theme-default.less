@@ -1,0 +1,22 @@
+@import "../common.less";
+@header_bgColor1: #84c361;
+@header_bgColor2: #3260af;
+.background(@header_bgColor1, @header_bgColor2) {
+    background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+    background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+    background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+    background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+}
+
+@footer_home_icon: url('../../images/home.png');
+@footer_discovery_icon: url('../../images/discovery.png');
+@footer_collect_icon: url('../../images/collect.png');
+@footer_homehover_icon: url('../../images/home-hover.png');
+@footer_discoveryhover_icon: url('../../images/discovery-hover.png');
+@footer_collecthover_icon: url('../../images/collect-hover.png');
+.background(@footer_home_icon) {
+    background: @footer_home_icon no-repeat;
+    background-size: cover;
+}
+
+@footer_font_color: #ff4081;
