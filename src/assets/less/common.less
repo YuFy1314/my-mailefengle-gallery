@@ -1,5 +1,18 @@
-@import './theme/theme-default.less';
-@import './theme/theme-custom.less';
+// @import './theme/theme-default.less';
+// @import './theme/theme-custom.less';
+.background(@default_header_bgColor1,
+@default_header_bgColor2) {
+    background: -webkit-linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
+    background: -moz-linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
+    background: -o-linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
+    background: linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
+}
+
+.backgroundfooter(@default_footer_home_icon) {
+    background: @default_footer_home_icon no-repeat;
+    background-size: cover;
+}
+
 .mu-paper {
     .background(@default_header_bgColor1, @default_header_bgColor2);
 }
@@ -12,13 +25,13 @@
     display: flex;
     justify-content: space-between;
     color: #fff;
-    .mu-paper;
+    .background(@default_header_bgColor1, @default_header_bgColor2);
 }
 
 #theme {
     width: @default_header_width;
     height: @default_header_height;
-    .mu-paper;
+    .background(@default_header_bgColor1, @default_header_bgColor2);
 }
 
 #PageTop {
@@ -27,7 +40,7 @@
     line-height: @default_header_height;
     display: flex;
     align-items: center;
-    .mu-paper;
+    .background(@default_header_bgColor1, @default_header_bgColor2);
     .return {
         width: 20px;
         height: 20px;
@@ -47,7 +60,7 @@
     bottom: 0;
     width: @default_header_width;
     height: @default_header_height;
-    .mu-paper;
+    .background(@default_header_bgColor1, @default_header_bgColor2);
     ul {
         width: 100%;
         height: 100%;
@@ -86,19 +99,19 @@
         }
     }
     .home span {
-        .background(@default_footer_home_icon);
+        .backgroundfooter(@default_footer_home_icon);
     }
 
     .discovery span {
-        .background(@default_footer_discovery_icon);
+        .backgroundfooter(@default_footer_discovery_icon);
     }
 
     .collect span {
-        .background(@default_footer_collect_icon);
+        .backgroundfooter(@default_footer_collect_icon);
     }
     .homehover {
         span {
-            .background(@default_footer_homehover_icon);
+            .backgroundfooter(@default_footer_homehover_icon);
         }
         p {
             color: @default_footer_font_color
@@ -107,7 +120,7 @@
 
     .discoveryhover {
         span {
-            .background(@default_footer_discoveryhover_icon);
+            .backgroundfooter(@default_footer_discoveryhover_icon);
         }
         p {
             color: @default_footer_font_color
@@ -115,7 +128,7 @@
     }
     .collecthover {
         span {
-            .background(@default_footer_collecthover_icon);
+            .backgroundfooter(@default_footer_collecthover_icon);
         }
         p {
             color: @default_footer_font_color
@@ -170,6 +183,19 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

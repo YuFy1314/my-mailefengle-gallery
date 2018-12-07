@@ -35,7 +35,7 @@ let config = {
             }
         }, {
             test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-            loader: 'url-loader?limit=100&name=/assets/image/[name].[ext]'
+            loader: 'url-loader?limit=1000&name=/assets/image/[name].[ext]'
         }]
     },
     plugins: [
