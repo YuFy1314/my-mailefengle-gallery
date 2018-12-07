@@ -3,12 +3,6 @@
 @default_header_bgColor2: #3260af;
 @default_header_width: 100%;
 @default_header_height: 50px;
-.background(@default_header_bgColor1, @default_header_bgColor2) {
-    background: -webkit-linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
-    background: -moz-linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
-    background: -o-linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
-    background: linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
-}
 
 @default_footer_home_icon: url('../../images/home.png');
 @default_footer_discovery_icon: url('../../images/discovery.png');
@@ -16,10 +10,12 @@
 @default_footer_homehover_icon: url('../../images/home-hover.png');
 @default_footer_discoveryhover_icon: url('../../images/discovery-hover.png');
 @default_footer_collecthover_icon: url('../../images/collect-hover.png');
-.background(@default_footer_home_icon) {
-    background: @default_footer_home_icon no-repeat;
-    background-size: cover;
-}
 
 @default_footer_font_color: #ff4081;
 @default_header_bgImage: url('../../images/return.png');
+
+// 主体内容
+.default {
+    .background(@default_header_bgColor1,
+    @default_header_bgColor2);
+}
