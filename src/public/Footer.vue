@@ -3,19 +3,19 @@
         <ul>
             <li>
                 <router-link to="/home" :class="{ 'home': home, 'homehover': homehover }">
-                    <span ref="homeImg"></span>
-                    <p ref="homeText">{{ sHomeTitle }}</p>
+                    <span></span>
+                    <p>{{ sHomeTitle }}</p>
                 </router-link>
             </li>
             <li>
-                <router-link to="/discovery" ref="discoveryImg" :class="{ 'discovery': discovery, 'discoveryhover': discoveryhover }">
-                    <span ref="discoveryText"></span>
+                <router-link to="/discovery" :class="{ 'discovery': discovery, 'discoveryhover': discoveryhover }">
+                    <span></span>
                     <p>{{ sDiscoveryTitle }}</p>
                 </router-link>
             </li>
             <li>
-                <router-link to="/collect" ref="collectImg" :class="{ 'collect': collect, 'collecthover': collecthover }">
-                    <span ref="collectText"></span>
+                <router-link to="/collect" :class="{ 'collect': collect, 'collecthover': collecthover }">
+                    <span></span>
                     <p>{{ sCollectTitle }}</p>
                 </router-link>
             </li>

@@ -1,27 +1,53 @@
 @import './theme/theme-default.less';
 @import './theme/theme-custom.less';
 .mu-paper {
-    .background(@header_bgColor1, @header_bgColor2);
+    .background(@default_header_bgColor1, @default_header_bgColor2);
 }
 
 #header {
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
+    width: @default_header_width;
+    height: @default_header_height;
+    line-height: @default_header_height;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
     color: #fff;
-    .background(@header_bgColor1, @header_bgColor2);
+    .mu-paper;
+}
+
+#theme {
+    width: @default_header_width;
+    height: @default_header_height;
+    .mu-paper;
+}
+
+#PageTop {
+    width: @default_header_width;
+    height: @default_header_height;
+    line-height: @default_header_height;
+    display: flex;
+    align-items: center;
+    .mu-paper;
+    .return {
+        width: 20px;
+        height: 20px;
+        background: @default_header_bgImage no-repeat;
+        background-size: contain;
+        margin-left: 10px;
+    }
+    .title {
+        text-align: center;
+        color: #fff;
+    }
 }
 
 #footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-    height: 50px;
-    .background(@header_bgColor1, @header_bgColor2);
+    width: @default_header_width;
+    height: @default_header_height;
+    .mu-paper;
     ul {
         width: 100%;
         height: 100%;
@@ -60,39 +86,39 @@
         }
     }
     .home span {
-        .background(@footer_home_icon);
+        .background(@default_footer_home_icon);
     }
 
     .discovery span {
-        .background(@footer_discovery_icon);
+        .background(@default_footer_discovery_icon);
     }
 
     .collect span {
-        .background(@footer_collect_icon);
+        .background(@default_footer_collect_icon);
     }
     .homehover {
         span {
-            .background(@footer_homehover_icon);
+            .background(@default_footer_homehover_icon);
         }
         p {
-            color: @footer_font_color
+            color: @default_footer_font_color
         }
     }
 
     .discoveryhover {
         span {
-            .background(@footer_discoveryhover_icon);
+            .background(@default_footer_discoveryhover_icon);
         }
         p {
-            color: @footer_font_color
+            color: @default_footer_font_color
         }
     }
     .collecthover {
         span {
-            .background(@footer_collecthover_icon);
+            .background(@default_footer_collecthover_icon);
         }
         p {
-            color: @footer_font_color
+            color: @default_footer_font_color
         }
     }
 }
@@ -144,6 +170,22 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

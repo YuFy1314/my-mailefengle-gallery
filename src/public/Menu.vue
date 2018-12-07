@@ -26,7 +26,7 @@
                 </mu-list-item-action>
                 <mu-list-item-title>编辑资料</mu-list-item-title>
             </mu-list-item>
-            <mu-list-item>
+            <mu-list-item @click.native="getTheme()">
                 <mu-list-item-action>
                     <span class="theme"></span>
                 </mu-list-item-action>
@@ -50,7 +50,13 @@ export default {
             signature: '我是一名web前端开发人员'
         }
     },
-    methods: {},
+    methods: {
+        getTheme() {
+            this.$router.push({
+                name: 'Theme'
+            });
+        }
+    },
 }
 
 </script>
