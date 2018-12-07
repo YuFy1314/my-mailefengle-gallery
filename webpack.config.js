@@ -25,7 +25,7 @@ let config = {
             test: /\.less$/,
             loader: "style-loader!css-loader!less-loader"
         }, {
-            test: /\.(png|jpg|jpeg|gif)$/,
+            test: /\.(png|jpg|jpeg|gif|svg)$/,
             use: {
                 loader: 'url-loader',
                 options: {
@@ -33,6 +33,9 @@ let config = {
                     name: '[name].[ext]'
                 }
             }
+        }, {
+            test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+            loader: 'url-loader?limit=100&name=/assets/image/[name].[ext]'
         }]
     },
     plugins: [
@@ -72,5 +75,6 @@ if (process.env.NODE_ENV === 'development') {
     };
     config.plugins.push(new Webpack.HotModuleReplacementPlugin());
 }
+
 
 module.exports = config;
