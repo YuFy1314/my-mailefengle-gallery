@@ -6,8 +6,9 @@ import router from '@/router/router.js';
 import App from '@/App.vue';
 import MuseUI from 'muse-ui';
 require('jquery');
-require('@/assets/js/style.js'); // 样式
+require('@/assets/js/style.js'); // 公用样式
 require('@/public/publicComponents.js'); // vue公共组件
+require('@/plugins/publicPlugins.js'); // 公用插件
 Vue.use(VueRouter);
 Vue.use(Vuex);
 Vue.use(MuseUI); // 侧边栏滑动插件

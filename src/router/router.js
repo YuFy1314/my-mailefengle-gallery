@@ -31,7 +31,7 @@ export default new VueRouter({
             component: Collect
         }]
     }, {
-        path: 'theme',
+        path: '/theme',
         name: 'Theme',
         component: Theme
     }]

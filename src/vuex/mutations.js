@@ -4,5 +4,8 @@ export default {
     },
     UPDATE_SIDEBAR_OPEN(state, val) {
         state.sidebar.open = val;
+    },
+    UPDATE_THEME(state, val) {
+        state.theme = val;
     }
 };

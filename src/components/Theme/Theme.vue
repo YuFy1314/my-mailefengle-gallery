@@ -3,10 +3,10 @@
         <PageTop :PageTopOptions="PageTopOptions" @backout="backout()"></PageTop>
         <div class="content">
             <div class="row">
-                <div class="col-xs-6" v-for="(item, index) in aTheme" :key="index" @click="changeTheme(index)">
+                <div class="col-xs-6" v-for="item in aTheme" @click="changeTheme(item.index)">
                     <div class="checked">
                         <i class="themeicon iconfont icon-theme" :class="item.class"></i>
-                        <i class="iconfont icon-dui"></i>
+                        <i class="iconfont icon-dui" v-if="item.isIconDui"></i>
                     </div>
                     <p class="detail">{{ item.title }}</p>
                 </div>
@@ -23,27 +23,55 @@ export default {
             },
             aTheme: [{
                 class: 'default-theme',
-                title: '默认主题'
+                title: '默认主题',
+                index: 'default',
+                isIconDui: false,
             }, {
                 class: 'custom-theme',
-                title: '自定义主题'
+                title: '自定义主题',
+                index: 'custom',
+                isIconDui: false,
             }, {
                 class: 'black-theme',
-                title: '雅黑'
+                title: '雅黑',
+                index: 'yahei',
+                isIconDui: false,
             }, {
                 class: 'red-theme',
-                title: '海棠红'
+                title: '海棠红',
+                index: 'redbegonia',
+                isIconDui: false,
             }, {
                 class: 'green-theme',
-                title: '藏青'
+                title: '藏青',
+                index: 'navy',
+                isIconDui: false,
             }]
+        }
+    },
+    mounted() {
+        for (let item of this.aTheme) {
+            item.isIconDui = false;
+            if (item.index == document.body.className) {
+                item.isIconDui = true;
+            }
         }
     },
     methods: {
         backout() {
             this.$router.back(1);
         },
-        changeTheme(index) {}
+        changeTheme(index) {
+            const sThemeId = index;
+            this.$exchangeTheme(sThemeId);
+            for (let item of this.aTheme) {
+                item.isIconDui = false;
+                if (item.index == index) {
+                    item.isIconDui = true;
+                    this.$store.commit('UPDATE_THEME', item.index);
+                }
+            }
+        }
     }
 }
 

@@ -11,7 +11,8 @@ const store = new Vuex.Store({
         sidebar: {
             open: false, // 控制侧边栏是否展开
             docked: false // 设为 true， 将不会显示遮盖层，也不会触发 close 事件
-        }
+        },
+        theme: 'default', // 默认主题
     },
     getters,
     mutations

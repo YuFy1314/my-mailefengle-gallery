@@ -1,0 +1,30 @@
+@import "../common.less";
+@navy_header_bgColor1: rgb(46, 78, 125);
+@navy_header_bgColor2: rgb(46, 78, 125);
+@navy_header_width: 100%;
+@navy_header_height: 50px;
+@navy_footer_home_icon: url('../../images/home.png');
+@navy_footer_discovery_icon: url('../../images/discovery.png');
+@navy_footer_collect_icon: url('../../images/collect.png');
+@navy_footer_homehover_icon: url('../../images/home-hover.png');
+@navy_footer_discoveryhover_icon: url('../../images/discovery-hover.png');
+@navy_footer_collecthover_icon: url('../../images/collect-hover.png');
+
+@navy_footer_font_color: #ff4081;
+@navy_header_bgImage: url('../../images/return.png');
+
+// 主体内容
+.navy {
+    .puclic_header_theme(@navy_header_width,
+    @navy_header_height,
+    @navy_header_bgColor1,
+    @navy_header_bgColor2,
+    @navy_header_bgImage);
+    .tabBar(@navy_footer_home_icon,
+    @navy_footer_discovery_icon,
+    @navy_footer_collect_icon,
+    @navy_footer_homehover_icon,
+    @navy_footer_discoveryhover_icon,
+    @navy_footer_collecthover_icon,
+    @navy_footer_font_color);
+}

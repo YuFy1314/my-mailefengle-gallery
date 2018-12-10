@@ -1,0 +1,30 @@
+@import "../common.less";
+@yahei_header_bgColor1: rgb(22, 24, 36);
+@yahei_header_bgColor2: rgb(22, 24, 36);
+@yahei_header_width: 100%;
+@yahei_header_height: 50px;
+@yahei_footer_home_icon: url('../../images/home.png');
+@yahei_footer_discovery_icon: url('../../images/discovery.png');
+@yahei_footer_collect_icon: url('../../images/collect.png');
+@yahei_footer_homehover_icon: url('../../images/yahei-home-hover.png');
+@yahei_footer_discoveryhover_icon: url('../../images/yahei-discovery-hover.png');
+@yahei_footer_collecthover_icon: url('../../images/yahei-collect-hover.png');
+
+@yahei_footer_font_color: #ff0000;
+@yahei_header_bgImage: url('../../images/return.png');
+
+// 主体内容
+.yahei {
+    .puclic_header_theme(@yahei_header_width,
+    @yahei_header_height,
+    @yahei_header_bgColor1,
+    @yahei_header_bgColor2,
+    @yahei_header_bgImage);
+    .tabBar(@yahei_footer_home_icon,
+    @yahei_footer_discovery_icon,
+    @yahei_footer_collect_icon,
+    @yahei_footer_homehover_icon,
+    @yahei_footer_discoveryhover_icon,
+    @yahei_footer_collecthover_icon,
+    @yahei_footer_font_color);
+}
