@@ -1,140 +1,151 @@
-// @import './theme/theme-default.less';
-// @import './theme/theme-custom.less';
-.background(@default_header_bgColor1,
-@default_header_bgColor2) {
-    background: -webkit-linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
-    background: -moz-linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
-    background: -o-linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
-    background: linear-gradient(left, @default_header_bgColor1, @default_header_bgColor2);
-}
-
-.backgroundfooter(@default_footer_home_icon) {
-    background: @default_footer_home_icon no-repeat;
-    background-size: cover;
-}
-
-.mu-paper {
-    .background(@default_header_bgColor1, @default_header_bgColor2);
-}
-
-#header {
-    width: @default_header_width;
-    height: @default_header_height;
-    line-height: @default_header_height;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    .background(@default_header_bgColor1, @default_header_bgColor2);
-}
-
-#theme {
-    width: @default_header_width;
-    height: @default_header_height;
-    .background(@default_header_bgColor1, @default_header_bgColor2);
-}
-
-#PageTop {
-    width: @default_header_width;
-    height: @default_header_height;
-    line-height: @default_header_height;
-    display: flex;
-    align-items: center;
-    .background(@default_header_bgColor1, @default_header_bgColor2);
-    .return {
-        width: 20px;
-        height: 20px;
-        background: @default_header_bgImage no-repeat;
-        background-size: contain;
-        margin-left: 10px;
+.puclic_header_theme(@header_width, @header_height, @header_bgColor1, @header_bgColor2, @header_bgImage) {
+    .mu-paper {
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
     }
-    .title {
-        text-align: center;
-        color: #fff;
-    }
-}
-
-#footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: @default_header_width;
-    height: @default_header_height;
-    .background(@default_header_bgColor1, @default_header_bgColor2);
-    ul {
-        width: 100%;
-        height: 100%;
+    #header {
+        width: @header_width;
+        height: @header_height;
+        line-height: @header_height;
+        font-size: 16px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        color: #fff;
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+    }
+
+    #theme {
+        width: @header_width;
+        height: @header_height;
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+    }
+
+    #PageTop {
+        width: @header_width;
+        height: @header_height;
+        line-height: @header_height;
+        display: flex;
         align-items: center;
-        li {
-            flex: 1;
-            a {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                text-decoration: none;
-                img {
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                }
-                p {
-                    font-size: 10px;
-                }
-                span {
-                    display: inline-block;
-                    width: 30px;
-                    height: 30px;
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        .return {
+            width: 20px;
+            height: 20px;
+            background: @header_bgImage no-repeat;
+            background-size: contain;
+            margin-left: 10px;
+        }
+        .title {
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    #footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: @header_width;
+        height: @header_height;
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                flex: 1;
+                a {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    text-decoration: none;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                    span {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
             }
         }
     }
 }
 
-#footer ul li {
-    a {
-        p {
-            color: #fff;
-        }
-    }
-    .home span {
-        .backgroundfooter(@default_footer_home_icon);
-    }
 
-    .discovery span {
-        .backgroundfooter(@default_footer_discovery_icon);
-    }
+.tabBar(@footer_home_icon, @footer_discovery_icon, @footer_collect_icon, @footer_homehover_icon, @footer_discoveryhover_icon, @footer_collecthover_icon, @footer_font_color) {
+    #footer ul li {
+        a {
+            p {
+                color: #fff;
+            }
+        }
+        .home span {
+            background: @footer_home_icon no-repeat;
+            background-size: cover;
+        }
 
-    .collect span {
-        .backgroundfooter(@default_footer_collect_icon);
-    }
-    .homehover {
-        span {
-            .backgroundfooter(@default_footer_homehover_icon);
+        .discovery span {
+            background: @footer_discovery_icon no-repeat;
+            background-size: cover;
         }
-        p {
-            color: @default_footer_font_color
-        }
-    }
 
-    .discoveryhover {
-        span {
-            .backgroundfooter(@default_footer_discoveryhover_icon);
+        .collect span {
+            background: @footer_collect_icon no-repeat;
+            background-size: cover;
         }
-        p {
-            color: @default_footer_font_color
+        .homehover {
+            span {
+                background: @footer_homehover_icon no-repeat;
+                background-size: cover;
+            }
+            p {
+                color: @footer_font_color;
+            }
         }
-    }
-    .collecthover {
-        span {
-            .backgroundfooter(@default_footer_collecthover_icon);
+
+        .discoveryhover {
+            span {
+                background: @footer_discoveryhover_icon no-repeat;
+                background-size: cover;
+            }
+            p {
+                color: @footer_font_color;
+            }
         }
-        p {
-            color: @default_footer_font_color
+        .collecthover {
+            span {
+                background: @footer_collecthover_icon no-repeat;
+                background-size: cover;
+            }
+            p {
+                color: @footer_font_color;
+            }
         }
     }
 }
+
 
 #menu {
     .mu-avatar {
@@ -183,6 +194,31 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

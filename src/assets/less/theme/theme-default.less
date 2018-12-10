@@ -3,7 +3,6 @@
 @default_header_bgColor2: #3260af;
 @default_header_width: 100%;
 @default_header_height: 50px;
-
 @default_footer_home_icon: url('../../images/home.png');
 @default_footer_discovery_icon: url('../../images/discovery.png');
 @default_footer_collect_icon: url('../../images/collect.png');
@@ -16,6 +15,16 @@
 
 // 主体内容
 .default {
-    .background(@default_header_bgColor1,
-    @default_header_bgColor2);
+    .puclic_header_theme(@default_header_width,
+    @default_header_height,
+    @default_header_bgColor1,
+    @default_header_bgColor2,
+    @default_header_bgImage);
+    .tabBar(@default_footer_home_icon,
+    @default_footer_discovery_icon,
+    @default_footer_collect_icon,
+    @default_footer_homehover_icon,
+    @default_footer_discoveryhover_icon,
+    @default_footer_collecthover_icon,
+    @default_footer_font_color);
 }
