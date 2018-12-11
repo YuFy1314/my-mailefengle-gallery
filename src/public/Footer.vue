@@ -3,19 +3,19 @@
         <ul>
             <li>
                 <router-link to="/home" :class="{ 'home': home, 'homehover': homehover }">
-                    <span></span>
+                    <i class="iconfont icon-mine"></i>
                     <p>{{ sHomeTitle }}</p>
                 </router-link>
             </li>
             <li>
                 <router-link to="/discovery" :class="{ 'discovery': discovery, 'discoveryhover': discoveryhover }">
-                    <span></span>
+                    <i class="iconfont icon-faxian"></i>
                     <p>{{ sDiscoveryTitle }}</p>
                 </router-link>
             </li>
             <li>
                 <router-link to="/collect" :class="{ 'collect': collect, 'collecthover': collecthover }">
-                    <span></span>
+                    <i class="iconfont icon-Collection"></i>
                     <p>{{ sCollectTitle }}</p>
                 </router-link>
             </li>
