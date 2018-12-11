@@ -104,8 +104,6 @@ export default {
 }
 
 #theme .themeicon {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 80px;
 }
 
@@ -133,7 +131,8 @@ export default {
     position: absolute;
     right: 50px;
     bottom: 30px;
-    color: rgb(126, 188, 103);
+    background-color: rgb(126, 188, 103);
+    font-size: 20px;
 }
 
 </style>

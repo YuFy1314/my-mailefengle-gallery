@@ -1,10 +1,23 @@
 @import "../common.less";
+
 @custom_header_bgColor1: #84c361;
 @custom_header_bgColor2: #3260af;
-@custom_header_bgImage: url('../../images/bg.png');
-#app {
-    .background(@custom_header_bgImage) {
-        background: @custom_header_bgImage no-repeat;
-        background-size: cover;
-    }
+@custom_menu_bg: url('../../images/bg-02.jpg');
+@custom_header_bg: url('../../images/custom-theme-bg.jpg');
+@custom_header_width: 100%;
+@custom_header_height: 50px;
+
+@custom_footer_font_color: #fff;
+@custom_footer_fonthover_color: #ff9900;
+@custom_header_bgImage: url('../../images/return.png');
+
+// 主体内容
+.custom {
+    .custom_header_theme(@custom_header_width,
+    @custom_header_height,
+    @custom_header_bgImage,
+    @custom_menu_bg,
+    @custom_header_bg);
+    .tabBar(@custom_footer_font_color,
+    @custom_footer_fonthover_color);
 }
