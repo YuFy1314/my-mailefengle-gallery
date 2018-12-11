@@ -15,6 +15,8 @@ export default {
         }
     },
     mounted() {
+        let oTheme = window.localStorage.getItem('oTheme');
+        this.theme = oTheme ? oTheme : this.$store.state.theme;
         this.$exchangeTheme(this.theme);
     },
     components: {

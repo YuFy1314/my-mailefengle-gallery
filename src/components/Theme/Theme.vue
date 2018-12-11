@@ -69,6 +69,7 @@ export default {
                 if (item.index == index) {
                     item.isIconDui = true;
                     this.$store.commit('UPDATE_THEME', item.index);
+                    window.localStorage.setItem('oTheme', item.index);
                 }
             }
         }
