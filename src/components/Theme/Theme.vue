@@ -79,7 +79,7 @@ export default {
 </script>
 <style>
 #theme .content {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 #theme .row {
