@@ -249,7 +249,7 @@
     }
 }
 
-
+// 侧栏菜单
 #menu {
     .mu-avatar {
         margin-top: 50px;
@@ -298,19 +298,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*滑入滑出菜单*/
-
+// 滑入滑出菜单
 .slideout-menu {
     position: fixed;
     top: 0;
@@ -347,4 +335,61 @@
 
 .slideout-open .slideout-menu {
     display: block;
+}
+
+// 模态框
+.public_modal(@header_bgColor1, @header_bgColor2, @footer_font_color) {
+    .mu-dialog {
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        .mu-dialog-body {
+            h3 {
+                font-size: 16px;
+                color: @footer_font_color;
+                line-height: 40px;
+            }
+            ul li .mu-item {
+                .mu-item-action i {
+                    background-color: @footer_font_color;
+                }
+                .mu-item-title {
+                    color: @footer_font_color;
+                }
+            }
+        }
+        .mu-dialog-actions {
+            button {
+                color: @footer_font_color;
+            }
+        }
+    }
+}
+
+.custom_modal(@header_bg, @footer_font_color) {
+    .mu-dialog {
+        background: @header_bg center center no-repeat;
+        background-size: cover;
+        .mu-dialog-body {
+            h3 {
+                font-size: 16px;
+                color: @footer_font_color;
+                line-height: 40px;
+            }
+            ul li .mu-item {
+                .mu-item-action i {
+                    background-color: @footer_font_color;
+                }
+                .mu-item-title {
+                    color: @footer_font_color;
+                }
+            }
+        }
+        .mu-dialog-actions {
+            button {
+                color: @footer_font_color;
+            }
+        }
+    }
 }
