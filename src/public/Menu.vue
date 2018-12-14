@@ -42,13 +42,13 @@
         <Modal ref="dialog" :modalOptions="modalOptions">
             <div slot="content">
                 <mu-list class="oparator-list">
-                    <mu-list-item>
+                    <mu-list-item @click.native="getGithub()">
                         <mu-list-item-action>
                             <i class="iconfont icon-github"></i>
                         </mu-list-item-action>
                         <mu-list-item-title>GitHub</mu-list-item-title>
                     </mu-list-item>
-                    <mu-list-item>
+                    <mu-list-item @click.native="getEmail()">
                         <mu-list-item-action>
                             <i class="iconfont icon-youxiang"></i>
                         </mu-list-item-action>
@@ -83,6 +83,12 @@ export default {
         },
         openSimpleDialog() {
             this.$refs.dialog.openSimpleDialog();
+        },
+        getGithub() {
+            console.log('github')
+        },
+        getEmail() {
+            console.log('getEmail')
         }
     },
     components: {

@@ -1,3 +1,7 @@
+<!-- /**
+ * * modal 网页头部接口参数
+ * @param {string} modal.title 网页标题
+ */ -->
 <template>
     <div id="modal">
         <mu-container>
@@ -27,7 +31,7 @@ export default {
             var modalOptions = {
                 title: modal.title || '系统提示'
             };
-            return modal;
+            return modalOptions;
         }
     },
     methods: {
