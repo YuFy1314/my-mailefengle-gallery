@@ -11,6 +11,7 @@
                 </slot>
                 <slot name="content"></slot>
                 <slot name="footer">
+                    <mu-button slot="actions" flat color="default" @click="commit" v-if="modal.isCommitBtn">确定</mu-button>
                     <mu-button slot="actions" flat color="default" @click="closeSimpleDialog">关闭</mu-button>
                 </slot>
             </mu-dialog>
@@ -29,7 +30,8 @@ export default {
         modal() {
             var modal = this.modalOptions || {};
             var modalOptions = {
-                title: modal.title || '系统提示'
+                title: modal.title || '系统提示',
+                isCommitBtn: typeof modal.isCommitBtn === 'undefined' ? true : modal.isCommitBtn
             };
             return modalOptions;
         }
@@ -40,6 +42,9 @@ export default {
         },
         closeSimpleDialog() {
             this.openSimple = false;
+        },
+        commit() {
+            this.$emit('commit');
         }
     }
 }

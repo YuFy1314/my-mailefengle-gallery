@@ -30,6 +30,8 @@ export default {
         return {
             refreshing: false,
             loading: false,
+            aGalleryLeft: [],
+            aGalleryRight: [],
         }
     },
     mounted() {

@@ -203,8 +203,22 @@
     font-size: 30px;
 }
 
-.tabBar(@footer_font_color,
-@footer_fonthover_color) {
+.toast(@toast_bgColor1, @toast_bgColor2, @footer_font_color) {
+    .lx-toast {
+        color: @footer_font_color;
+        background: -webkit-linear-gradient(left, @toast_bgColor1, @toast_bgColor2);
+        background: -moz-linear-gradient(left, @toast_bgColor1, @toast_bgColor2);
+        background: -o-linear-gradient(left, @toast_bgColor1, @toast_bgColor2);
+        background: linear-gradient(left, @toast_bgColor1, @toast_bgColor2);
+    }
+}
+
+
+.lx-toast {
+    z-index: 9999999999;
+}
+
+.tabBar(@footer_font_color, @footer_fonthover_color) {
     #footer ul li {
         a {
             p {
@@ -359,6 +373,9 @@
                     color: @footer_font_color;
                 }
             }
+            .mu-text-field-input {
+                color: @footer_font_color;
+            }
         }
         .mu-dialog-actions {
             button {
@@ -385,6 +402,9 @@
                 .mu-item-title {
                     color: @footer_font_color;
                 }
+            }
+            .mu-text-field-input {
+                color: @footer_font_color;
             }
         }
         .mu-dialog-actions {

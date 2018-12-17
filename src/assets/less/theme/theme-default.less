@@ -7,6 +7,14 @@
 @default_footer_font_color: #fff;
 @default_footer_fonthover_color: #ff4081;
 @default_header_bgImage: url('../../images/return.png');
+@default_toast_bgColor1: rgba(132,
+195,
+97,
+0.5);
+@default_toast_bgColor2: rgba(50,
+96,
+175,
+0.5);
 
 // 主体内容
 .default {
@@ -19,5 +27,8 @@
     @default_footer_fonthover_color);
     .public_modal(@default_header_bgColor1,
     @default_header_bgColor2,
+    @default_footer_font_color);
+    .toast(@default_toast_bgColor1,
+    @default_toast_bgColor2,
     @default_footer_font_color);
 }

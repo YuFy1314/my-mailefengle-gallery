@@ -92,7 +92,7 @@ export default {
                 });
         },
         star() {
-            console.log(111111111)
+
         }
     }
 }
