@@ -1,16 +1,17 @@
 <template>
     <div class="demo-picker-container">
-        <mu-slide-picker :slots="addressSlots" :visible-item-count="7" @change="addressChange" :values="address" :addressOptions="addressOptions"></mu-slide-picker>
+        <div v-if="addresses.isAddressShow">
+            <mu-slide-picker :slots="addressSlots" :visible-item-count="5" @change="addressChange" :values="address"></mu-slide-picker>
+        </div>
         <slot name="content">
             <div class="address-box">
-                <mu-text-field v-model="addresses.addressProvince" placeholder="选择所在省市" readonly></mu-text-field>
+                <mu-text-field v-model="addresses.addressProvince" placeholder="选择所在省市" readonly @click="selectAddress()"></mu-text-field>
                 <mu-text-field v-model="addresses.addressCity" readonly></mu-text-field>
             </div>
         </slot>
         <slot name="footer">
             <div class="btn-box">
-                <mu-button flat color="primary">确定</mu-button>
-                <mu-button flat>取消</mu-button>
+                <mu-button flat color="primary" @click="finished()" v-if="addresses.isAddressShow">完成</mu-button>
             </div>
         </slot>
     </div>
@@ -65,9 +66,7 @@ export default {
                 textAlign: 'center',
                 values: ['北京']
             }],
-            address: ['北京', '北京'],
-            addressProvince: '',
-            addressCity: ''
+            address: ['北京', '北京']
         }
     },
     computed: {
@@ -75,7 +74,8 @@ export default {
             var addresses = this.addressOptions || {};
             var addressOptions = {
                 addressProvince: addresses.addressProvince || '北京',
-                addressCity: addresses.addressCity || '北京'
+                addressCity: addresses.addressCity || '北京',
+                isAddressShow: typeof addresses.isAddressShow === 'undefined' ? false : true
             };
             return addressOptions;
         }
@@ -94,6 +94,13 @@ export default {
                     break;
             }
             this.address = [this.addresses.addressProvince, this.addresses.addressCity];
+        },
+        selectAddress() {
+            this.addresses.isAddressShow = true;
+        },
+        finished() {
+            this.addresses.isAddressShow = false;
+            this.$emit('finished');
         }
     }
 }
@@ -134,11 +141,11 @@ export default {
 
 .btn-box {
     position: fixed;
-    bottom: 0;
+    bottom: 110px;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row-reverse;
 }
 
 </style>

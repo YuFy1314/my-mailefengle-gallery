@@ -46,7 +46,8 @@
                     <br/>
                     <mu-text-field v-model="vSignature" placeholder="个人签名"></mu-text-field>
                     <br/>
-                    <AddressSelector v-if="isAddressShow" :addressOptions="addressOptions"></AddressSelector>
+                    <AddressSelector :addressOptions="addressOptions" @finished="finished">
+                    </AddressSelector>
                 </mu-list>
             </div>
         </Modal>
@@ -97,7 +98,6 @@ export default {
             vNickname: '',
             vSignature: '',
             addressOptions: {},
-            isAddressShow: false,
         }
     },
     mounted() {
@@ -105,7 +105,6 @@ export default {
         this.signature = window.localStorage.getItem('vSignature') || this.signature;
         this.vNickname = this.nickname || this.vNickname;
         this.vSignature = this.signature || this.vSignature;
-        this.isAddressShow = true;
     },
     methods: {
         getTheme() {
@@ -141,6 +140,9 @@ export default {
         },
         getPhoneTell() {
             window.location.href = 'tel://17647373157'
+        },
+        finished() {
+
         }
     },
     components: {
