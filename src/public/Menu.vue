@@ -46,8 +46,7 @@
                     <br/>
                     <mu-text-field v-model="vSignature" placeholder="个人签名"></mu-text-field>
                     <br/>
-                    <AddressSelector :addressOptions="addressOptions" @finished="finished">
-                    </AddressSelector>
+                    <AddressSelector :addressOptions="addressOptions" @finished="finished"></AddressSelector>
                 </mu-list>
             </div>
         </Modal>

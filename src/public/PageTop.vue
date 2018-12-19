@@ -8,7 +8,7 @@
     <div id="PageTop">
         <slot name="PageTop">
             <div class="return col-xs-2" @click="backout()"></div>
-            <div class="title col-xs-4 col-xs-offset-3">
+            <div class="title col-xs-6 col-xs-offset-2">
                 {{ PageTop.title }}
             </div>
         </slot>
