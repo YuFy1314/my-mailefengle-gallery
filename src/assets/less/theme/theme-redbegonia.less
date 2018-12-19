@@ -8,6 +8,15 @@
 @redbegonia_footer_fonthover_color: rgb(46, 78, 125);
 @redbegonia_header_bgImage: url('../../images/return.png');
 
+@redbegonia_toast_bgColor1: rgba(219,
+90,
+108,
+0.5);
+@redbegonia_toast_bgColor2: rgba(219,
+90,
+108,
+0.5);
+
 // 主体内容
 .redbegonia {
     .puclic_header_theme(@redbegonia_header_width,
@@ -19,5 +28,8 @@
     @redbegonia_footer_fonthover_color);
     .public_modal(@redbegonia_header_bgColor1,
     @redbegonia_header_bgColor2,
+    @redbegonia_footer_font_color);
+    .toast(@redbegonia_toast_bgColor1,
+    @redbegonia_toast_bgColor2,
     @redbegonia_footer_font_color);
 }

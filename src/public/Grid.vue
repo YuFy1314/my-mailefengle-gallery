@@ -8,7 +8,7 @@
         </div>
         <slot name="content">
             <mu-grid-list class="gridlist-inline-demo" :cols="grid.col">
-                <mu-grid-tile v-for="(item, index) in grid.aGridList" :key="index">
+                <mu-grid-tile v-for="(item, index) in grid.aGridList" :key="index" @click="getMovieInfo(item.id)">
                     <img :src="item.src">
                     <span slot="title">{{ item.title }}</span>
                     <span slot="subTitle"><b>{{ item.name }}</b></span>
@@ -34,7 +34,6 @@ export default {
                     item.name ? item.name : '';
                 });
             }
-
             var gridOptions = {
                 title: grid.title || 'Grid列表标题',
                 isMoreBtn: typeof grid.isMoreBtn === 'undefined' ? true : grid.isMoreBtn,
@@ -51,6 +50,11 @@ export default {
         },
         star() {
             this.$emit('star');
+        },
+        getMovieInfo(id) {
+            console.log(id)
+            // id = typeof id === 'undefined' ?
+            this.$emit('getMovieInfo', id);
         }
     }
 }
