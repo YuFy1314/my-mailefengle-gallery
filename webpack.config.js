@@ -71,7 +71,16 @@ if (process.env.NODE_ENV === 'development') {
         },
         compress: true,
         hot: true,
-        hotOnly: true
+        hotOnly: true,
+        proxy: {
+            '/': {
+                target: 'http://localhost:8088/',
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/': ''
+                }
+            }
+        }
     };
     config.plugins.push(new Webpack.HotModuleReplacementPlugin());
 }

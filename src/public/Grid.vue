@@ -3,16 +3,16 @@
         <div class="classification-title">
             <slot name="header">
                 <h3>{{ grid.title }}</h3>
-                <span v-if="grid.isMoreBtn" @click="viewMore()">查看更多<i class="iconfont icon-right"></i></span>
+                <span v-if="grid.isMoreBtn" @click.stop="viewMore()">查看更多<i class="iconfont icon-right"></i></span>
             </slot>
         </div>
         <slot name="content">
             <mu-grid-list class="gridlist-inline-demo" :cols="grid.col">
-                <mu-grid-tile v-for="(item, index) in grid.aGridList" :key="index" @click="getMovieInfo(item.id)">
+                <mu-grid-tile v-for="(item, index) in grid.aGridList" :key="index" @click.stop="getMovieInfo(item.id)">
                     <img :src="item.src">
                     <span slot="title">{{ item.title }}</span>
                     <span slot="subTitle"><b>{{ item.name }}</b></span>
-                    <mu-button slot="action" icon v-if="grid.starBtn" @click="star()">
+                    <mu-button slot="action" icon v-if="grid.starBtn" @click.stop="star($event, item.id)">
                         <mu-icon value="star_border"></mu-icon>
                     </mu-button>
                 </mu-grid-tile>
@@ -23,6 +23,9 @@
 <script>
 export default {
     props: ['gridOptions'],
+    data() {
+        return {}
+    },
     computed: {
         grid() {
             var grid = this.gridOptions || {};
@@ -48,12 +51,10 @@ export default {
         viewMore() {
             this.$emit('viewMore');
         },
-        star() {
-            this.$emit('star');
+        star(ev, id) {
+            this.$emit('star', ev, id);
         },
         getMovieInfo(id) {
-            console.log(id)
-            // id = typeof id === 'undefined' ?
             this.$emit('getMovieInfo', id);
         }
     }
