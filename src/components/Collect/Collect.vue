@@ -35,12 +35,12 @@ export default {
         }
     },
     mounted() {
-        this.$nextTick(() => {
-            let iMainHeight = $(window).height() - $('#header').height() - $('#footer').height();
-            $('.main .demo-loadmore-wrap').css({
-                height: iMainHeight + 'px'
-            });
-        });
+        // this.$nextTick(() => {
+        //     let iMainHeight = $(window).height() - $('#header').height() - $('#footer').height();
+        //     $('.main .demo-loadmore-wrap').css({
+        //         height: iMainHeight + 'px'
+        //     });
+        // });
     },
     methods: {
         refresh() {

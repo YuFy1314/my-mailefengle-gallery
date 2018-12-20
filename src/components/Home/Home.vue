@@ -7,9 +7,9 @@
                 </a>
             </mu-carousel-item>
         </mu-carousel>
-        <Grid ref="grid1" :gridOptions="gridOptions1" @viewMore="starHotMovie" @getMovieInfo="getHotMovieInfo"></Grid>
-        <Grid ref="grid2" :gridOptions="gridOptions2" @viewMore="starComingMovie" @getMovieInfo="getComingMovieInfo"></Grid>
-        <Grid ref="grid3" :gridOptions="gridOptions3" @viewMore="starWordofMouthMovie" @getMovieInfo="getWordofMouthMovieInfo"></Grid>
+        <Grid ref="grid1" :gridOptions="gridOptions1" @star="starHotMovie" @getMovieInfo="getHotMovieInfo"></Grid>
+        <Grid ref="grid2" :gridOptions="gridOptions2" @star="starComingMovie" @getMovieInfo="getComingMovieInfo"></Grid>
+        <Grid ref="grid3" :gridOptions="gridOptions3" @star="starWordofMouthMovie" @getMovieInfo="getWordofMouthMovieInfo"></Grid>
     </div>
 </template>
 <script>
@@ -135,6 +135,15 @@ export default {
                     });
                 }
             });
+        },
+        starHotMovie(ev, id) {
+            if (ev.target.nextSibling.style.color == '') {
+                ev.target.nextSibling.style.color = '#f90';
+                this.$toast.center('收藏成功');
+            } else if (ev.target.nextSibling.style.color == 'rgb(255, 153, 0)') {
+                ev.target.nextSibling.style.color = '';
+                this.$toast.center('已取消收藏');
+            }
         }
     }
 }

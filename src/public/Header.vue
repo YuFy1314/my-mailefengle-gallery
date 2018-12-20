@@ -27,6 +27,9 @@ export default {
             position: 'left'
         }
     },
+    mounted() {
+        this.open = false;
+    },
     computed: {
         ...mapState(['headerTitle'])
     },
