@@ -1,7 +1,8 @@
 <template>
     <mu-row justify-content="center" id="menu">
         <mu-avatar :size="size">
-            <img src="../assets/images/logo.png" />
+            <img :src="avatar" />
+            <input type="file" accept="image/*" @change="handleFile($event)" class="hiddenInput" />
         </mu-avatar>
         <mu-list>
             <mu-list-item>
@@ -84,6 +85,7 @@ import AddressSelector from './AddressSelector.vue';
 export default {
     data() {
         return {
+            avatar: require('../assets/images/logo.png'),
             size: 100,
             nickname: '苏日俪格',
             signature: '我是一名web前端开发人员',
@@ -104,8 +106,20 @@ export default {
         this.signature = window.localStorage.getItem('vSignature') || this.signature;
         this.vNickname = this.nickname || this.vNickname;
         this.vSignature = this.signature || this.vSignature;
+        this.avatar = window.localStorage.getItem('avatar') || this.avatar;
     },
     methods: {
+        handleFile(e) {
+            let $target = e.target || e.srcElement;
+            let file = $target.files[0];
+            var reader = new FileReader();
+            reader.onload = (data) => {
+                let res = data.target || data.srcElement;
+                this.avatar = res.result;
+                window.localStorage.setItem('avatar', this.avatar);
+            };
+            reader.readAsDataURL(file);
+        },
         getTheme() {
             this.$router.push({
                 name: 'Theme'
