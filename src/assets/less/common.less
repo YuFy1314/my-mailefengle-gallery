@@ -61,6 +61,11 @@
         .title {
             text-align: center;
             color: #fff;
+            .mu-input {
+                padding: 0;
+                margin-bottom: 0;
+                min-height: auto;
+            }
         }
     }
 
@@ -159,6 +164,11 @@
         .title {
             text-align: center;
             color: #fff;
+            .mu-input {
+                padding: 0;
+                margin-bottom: 0;
+                min-height: auto;
+            }
         }
     }
 
@@ -271,6 +281,18 @@
 #menu {
     .mu-avatar {
         margin-top: 50px;
+        .mu-avatar-inner {
+            position: relative;
+            img {
+                position: absolute;
+            }
+            input {
+                position: absolute;
+                opacity: 0;
+                width: 100px;
+                height: 100px;
+            }
+        }
     }
     .mu-item {
         height: 26px;

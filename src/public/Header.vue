@@ -3,10 +3,10 @@
         <main id="panel">
             <header id="header">
                 <div class="toggle-button" @click="UPDATE_SIDEBAR_OPEN({open: open = !open})">
-                    <img src="../assets/images/logo.png" />
+                    <img :src="avatar" />
                 </div>
                 <div class="title">{{ headerTitle }}</div>
-                <div class="search">
+                <div class="search" @click="searchData()">
                     <img src="../assets/images/search.png" />
                 </div>
             </header>
@@ -24,11 +24,13 @@ export default {
         return {
             open: this.$store.state.sidebar.open,
             docked: this.$store.state.sidebar.docked,
-            position: 'left'
+            position: 'left',
+            avatar: require('../assets/images/logo.png'),
         }
     },
     mounted() {
         this.open = false;
+        this.initData();
     },
     computed: {
         ...mapState(['headerTitle'])
@@ -36,7 +38,15 @@ export default {
     methods: {
         ...mapMutations([
             'UPDATE_SIDEBAR_OPEN'
-        ])
+        ]),
+        initData() {
+            this.avatar = window.localStorage.getItem('avatar') || this.avatar;
+        },
+        searchData() {
+            this.$router.push({
+                name: 'MovieSearch'
+            });
+        }
     },
     components: {
         Menu
