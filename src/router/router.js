@@ -9,6 +9,7 @@ const MovieDetail = r => require.ensure([], () => r(require('@/components/Home/M
 const Discovery = r => require.ensure([], () => r(require('@/components/Discovery/Discovery.vue')), 'Discovery');
 const Collect = r => require.ensure([], () => r(require('@/components/Collect/Collect.vue')), 'Collect');
 const Theme = r => require.ensure([], () => r(require('@/components/Theme/Theme.vue')), 'Theme');
+const MovieSearch = r => require.ensure([], () => r(require('@/public/MovieSearch.vue')), 'MovieSearch');
 
 export default new VueRouter({
     routes: [{
@@ -39,5 +40,9 @@ export default new VueRouter({
         path: 'moviedetail',
         name: 'MovieDetail',
         component: MovieDetail
+    }, {
+        path: '/moviesearch',
+        name: 'MovieSearch',
+        component: MovieSearch
     }]
 });

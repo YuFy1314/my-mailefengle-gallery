@@ -6,7 +6,7 @@
                     <img :src="avatar" />
                 </div>
                 <div class="title">{{ headerTitle }}</div>
-                <div class="search">
+                <div class="search" @click="searchData()">
                     <img src="../assets/images/search.png" />
                 </div>
             </header>
@@ -41,6 +41,11 @@ export default {
         ]),
         initData() {
             this.avatar = window.localStorage.getItem('avatar') || this.avatar;
+        },
+        searchData() {
+            this.$router.push({
+                name: 'MovieSearch'
+            });
         }
     },
     components: {
