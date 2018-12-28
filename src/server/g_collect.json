@@ -1,0 +1,11 @@
+[
+{"type":"header","version":"4.8.3","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"gallery"},
+{"type":"table","name":"g_collect","database":"gallery","data":
+[
+{"id":"1","name":"苏日俪格"},
+{"id":"2","name":"赵云"},
+{"id":"5","name":"张飞"}
+]
+}
+]
