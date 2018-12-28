@@ -1,0 +1,441 @@
+.puclic_header_theme(@header_width, @header_height, @header_bgColor1, @header_bgColor2, @header_bgImage) {
+    .mu-paper {
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+    }
+    #header {
+        width: @header_width;
+        height: @header_height;
+        line-height: @header_height;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+    }
+    .main {
+        padding: 50px 0;
+        .mu-paper {
+            background: none;
+        }
+    }
+    #theme {
+        width: @header_width;
+        height: @header_height;
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+    }
+
+    #PageTop {
+        width: @header_width;
+        height: @header_height;
+        line-height: @header_height;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        .return {
+            width: 20px;
+            height: 20px;
+            background: @header_bgImage no-repeat;
+            background-size: contain;
+            margin-left: 10px;
+        }
+        .title {
+            text-align: center;
+            color: #fff;
+            .mu-input {
+                padding: 0;
+                margin-bottom: 0;
+                min-height: auto;
+            }
+        }
+    }
+
+    #footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: @header_width;
+        height: @header_height;
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                flex: 1;
+                a {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    text-decoration: none;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                    i {
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom_header_theme(@header_width, @header_height, @header_bgImage, @menu_bg, @header_bg) {
+    .mu-paper {
+        background: @menu_bg center center no-repeat;
+        background-size: cover;
+    }
+    #header {
+        width: @header_width;
+        height: @header_height;
+        line-height: @header_height;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 16px;
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        background: @header_bg center top no-repeat;
+        background-size: cover;
+    }
+    .main {
+        padding: 50px 0;
+        .mu-paper {
+            background: none;
+        }
+    }
+    #theme {
+        width: @header_width;
+        height: @header_height;
+        background: @header_bg center top no-repeat;
+        background-size: cover;
+    }
+
+    #PageTop {
+        width: @header_width;
+        height: @header_height;
+        line-height: @header_height;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        background: @header_bg center top no-repeat;
+        background-size: cover;
+        .return {
+            width: 20px;
+            height: 20px;
+            background: @header_bgImage no-repeat;
+            background-size: contain;
+            margin-left: 10px;
+        }
+        .title {
+            text-align: center;
+            color: #fff;
+            .mu-input {
+                padding: 0;
+                margin-bottom: 0;
+                min-height: auto;
+            }
+        }
+    }
+
+    #footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: @header_width;
+        height: @header_height;
+        background: @header_bg center bottom no-repeat;
+        background-size: cover;
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                flex: 1;
+                a {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    text-decoration: none;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                    i {
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.iconfont {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.toast(@toast_bgColor1, @toast_bgColor2, @footer_font_color) {
+    .lx-toast {
+        color: @footer_font_color;
+        background: -webkit-linear-gradient(left, @toast_bgColor1, @toast_bgColor2);
+        background: -moz-linear-gradient(left, @toast_bgColor1, @toast_bgColor2);
+        background: -o-linear-gradient(left, @toast_bgColor1, @toast_bgColor2);
+        background: linear-gradient(left, @toast_bgColor1, @toast_bgColor2);
+    }
+}
+
+
+.lx-toast {
+    z-index: 9999999999;
+}
+
+.tabBar(@footer_font_color, @footer_fonthover_color) {
+    #footer ul li {
+        a {
+            p {
+                color: @footer_font_color;
+            }
+        }
+        .home i {
+            background-color: @footer_font_color;
+        }
+
+        .discovery i {
+            background-color: @footer_font_color;
+        }
+
+        .collect i {
+            background-color: @footer_font_color;
+        }
+        .homehover {
+            i {
+                background-color: @footer_fonthover_color;
+            }
+            p {
+                color: @footer_fonthover_color;
+            }
+        }
+
+        .discoveryhover {
+            i {
+                background-color: @footer_fonthover_color;
+            }
+            p {
+                color: @footer_fonthover_color;
+            }
+        }
+        .collecthover {
+            i {
+                background-color: @footer_fonthover_color;
+            }
+            p {
+                color: @footer_fonthover_color;
+            }
+        }
+    }
+}
+
+// 侧栏菜单
+#menu {
+    .mu-avatar {
+        margin-top: 50px;
+        .mu-avatar-inner {
+            position: relative;
+            img {
+                position: absolute;
+            }
+            input {
+                position: absolute;
+                opacity: 0;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .mu-item {
+        height: 26px;
+        p {
+            font-size: 14px;
+            color: #fff;
+        }
+        .mu-item-title {
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .oparator-list {
+        li {
+            padding: 10px 0;
+            .mu-item {
+                padding: 0 30px;
+                .mu-item-action {
+                    justify-content: center;
+                    span {
+                        display: inline-block;
+                        width: 22px;
+                        height: 22px;
+                    }
+                    span.editinfo {
+                        background: url(../images/editinfo.png) no-repeat;
+                        background-size: cover;
+                    }
+                    span.theme {
+                        background: url(../images/theme.png) no-repeat;
+                        background-size: cover;
+                    }
+                    span.Customer-service {
+                        background: url(../images/Customer-service.png) no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .mu-item-title {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+// 滑入滑出菜单
+.slideout-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 256px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 0;
+    display: none;
+}
+
+.slideout-menu-left {
+    left: 0;
+}
+
+.slideout-menu-right {
+    right: 0;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    background-color: #FFF;
+    min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+// 模态框
+.public_modal(@header_bgColor1, @header_bgColor2, @footer_font_color) {
+    .mu-dialog {
+        background: -webkit-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -moz-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: -o-linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        background: linear-gradient(left, @header_bgColor1, @header_bgColor2);
+        .mu-dialog-body {
+            h3 {
+                font-size: 16px;
+                color: @footer_font_color;
+                line-height: 40px;
+            }
+            ul li .mu-item {
+                .mu-item-action i {
+                    background-color: @footer_font_color;
+                }
+                .mu-item-title {
+                    color: @footer_font_color;
+                }
+            }
+            .mu-text-field-input {
+                color: @footer_font_color;
+            }
+        }
+        .mu-dialog-actions {
+            button {
+                color: @footer_font_color;
+            }
+        }
+    }
+}
+
+.custom_modal(@header_bg, @footer_font_color) {
+    .mu-dialog {
+        background: @header_bg center center no-repeat;
+        background-size: cover;
+        .mu-dialog-body {
+            h3 {
+                font-size: 16px;
+                color: @footer_font_color;
+                line-height: 40px;
+            }
+            ul li .mu-item {
+                .mu-item-action i {
+                    background-color: @footer_font_color;
+                }
+                .mu-item-title {
+                    color: @footer_font_color;
+                }
+            }
+            .mu-text-field-input {
+                color: @footer_font_color;
+            }
+        }
+        .mu-dialog-actions {
+            button {
+                color: @footer_font_color;
+            }
+        }
+    }
+}

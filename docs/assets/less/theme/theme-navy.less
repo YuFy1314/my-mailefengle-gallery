@@ -1,0 +1,35 @@
+@import "../common.less";
+@navy_header_bgColor1: rgb(46, 78, 125);
+@navy_header_bgColor2: rgb(46, 78, 125);
+@navy_header_width: 100%;
+@navy_header_height: 50px;
+
+@navy_footer_font_color: #fff;
+@navy_footer_fonthover_color: rgb(219, 90, 108);
+@navy_header_bgImage: url('../../images/return.png');
+
+@navy_toast_bgColor1: rgba(46,
+78,
+125,
+0.5);
+@navy_toast_bgColor2: rgba(46,
+78,
+125,
+0.5);
+
+// 主体内容
+.navy {
+    .puclic_header_theme(@navy_header_width,
+    @navy_header_height,
+    @navy_header_bgColor1,
+    @navy_header_bgColor2,
+    @navy_header_bgImage);
+    .tabBar(@navy_footer_font_color,
+    @navy_footer_fonthover_color);
+    .public_modal(@navy_header_bgColor1,
+    @navy_header_bgColor2,
+    @navy_footer_font_color);
+    .toast(@navy_toast_bgColor1,
+    @navy_toast_bgColor2,
+    @navy_footer_font_color);
+}
