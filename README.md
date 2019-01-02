@@ -14,8 +14,13 @@
 
 -----------------------
 纯粹个人瞎搞，想熟悉一下Vue全家桶+webpack构建项目的开发流程^_^
+
+## 技术栈
+vue2 + vuex + vue-router + vue-resource + webpack + ESNext + muse-ui + less + flex + bootstrap + jquery
+
 ## 首要任务
-首先你需要安装Node.js，点击打开Node.js下载页面，安装v8.5之后的版本。安装完Node.js后，会自带npm包管理器。
+#### 注意：由于涉及大量的 ESNext 的新属性，node 需要 6.0 以上版本
+首先你需要安装Node.js，点击打开Node.js下载页面，推荐安装最新版，本项目中使用的是v10.8.0。安装完Node.js后，会自带npm包管理器。
 如果这两个你都有了就直接走下一步☟☟☟
 ## 安装依赖
 > npm install
