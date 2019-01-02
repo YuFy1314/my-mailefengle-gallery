@@ -1,5 +1,5 @@
 # my-mailefengle-gallery
-项目地址：https://yufy1314.github.io/my-mailefengle-gallery/
+
 ### theme里程碑:
 这里主要针对项目的皮肤主题的管理多元化进行开发
 用户可以根据自己的喜好来设置个性化皮肤
@@ -30,3 +30,5 @@ vue2 + vuex + vue-router + vue-resource + webpack + ESNext + muse-ui + less + fl
 > npm start / npm run dev
 ## 打开浏览器
 地址输入localhost:8080  就可以看到项目运行成功了
+## 项目运行效果
+[预览项目猛戳](https://yufy1314.github.io/my-mailefengle-gallery/)（请用chrome手机模式预览）
