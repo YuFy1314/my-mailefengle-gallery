@@ -7,7 +7,83 @@
 这个项目主要是为了进一步熟悉vue项目的开发, 既然经过上面的两个案例知道了vue项目如何开发以及简单的项目的基本配置构建, 那么现在这个项目就是要知道整个Vue项目的开发流程以及构建, 还有结合Vue全家桶如何开发, 开发的过程中, 项目的结构也是至关重要
 
 ```
-tree /F
+│   .gitignore                                                    // Git push到仓库忽略的文件
+│   package.json                                                  // 配置文件
+│   README.md                                                     // 入手项目前要读的文档
+│   vue.config.js                                                 // 配置Vue项目可预览
+│   webpack.config.js                                             // Webpack配置文件
+│                                                                 
+└───src                                                           // 项目主体文件夹
+    │   App.vue                                                   // Vue入口主组件
+    │   index.html                                                // 项目主页
+    │   index.js                                                  // 项目入口 Vue的实例
+    │                                                             
+    ├───assets                                                    // 静态资源文件夹
+    │   ├───css                                                   
+    │   │       common.css                                        
+    │   │       reset.css                                         
+    │   │                                                         
+    │   ├───fonts                                                 // 在阿里icon下载的图标库
+    │   │       iconfont.css                                      
+    │   │       iconfont.eot                                      
+    │   │       iconfont.svg                                      
+    │   │       iconfont.ttf                                      
+    │   │       iconfont.woff                                     
+    │   │                                                         
+    │   ├───js                                                    
+    │   │       style.js                                          // 引入所有第三方样式
+    │   │                                                         
+    │   └───less                                                  
+    │       │   common.less                                       // 公共样式
+    │       │   reset.less                                        // 默认样式
+    │       │   theme.less                                        // 引入主题样式
+    │       │                                                     
+    │       └───theme                                             // 主题样式的定义
+    │               theme-custom.less                             
+    │               theme-default.less                            
+    │               theme-navy.less                               
+    │               theme-redbegonia.less                         
+    │               theme-yahei.less                              
+    │                                                             
+    ├───components                                                
+    │   ├───Collect                                               
+    │   │       Collect.vue                                       // 收藏组件
+    │   │                                                         
+    │   ├───Discovery                                             
+    │   │       Discovery.vue                                     // 发现组件
+    │   │                                                         
+    │   ├───Home                                                  
+    │   │       Home.vue                                          // 主页组件
+    │   │       MovieDetail.vue                                   // 电影详情组件
+    │   │                                                         
+    │   ├───index                                                 
+    │   │       Index.vue                                         // 首页组件
+    │   │                                                         
+    │   └───Theme                                                 
+    │           Theme.vue                                         // 个人主题组件
+    │                                                             
+    ├───plugins                                                   // 公共插件库
+    │       exchangeThemePlugin.js                                // 切换主题插件
+    │       publicPlugins.js                                      // 公共插件的引入
+    │                                                             
+    ├───public                                                    // 公共组件库
+    │       AddressSelector.vue                                   // 地址选择器组件
+    │       Footer.vue                                            // 尾部组件
+    │       Grid.vue                                              // 单图组件
+    │       Header.vue                                            // 一级头部组件
+    │       Menu.vue                                              // 侧栏菜单组件
+    │       Modal.vue                                             // 模态框组件
+    │       MovieSearch.vue                                       // 电影搜索组件
+    │       PageTop.vue                                           // 二级头部组件
+    │       publicComponents.js                                   // 公共组件的引入
+    │                                                             
+    ├───router                                                    // 路由
+    │       router.js                                             
+    │                                                             
+    └───vuex                                                      // Vue状态管理库
+            getters.js                                            
+            mutations.js                                          
+            store.js                                              
 ```
 
 ### theme里程碑:
