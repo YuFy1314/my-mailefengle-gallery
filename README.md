@@ -40,7 +40,7 @@
     │       │                                                     
     │       └───theme                                             // 主题样式的定义
     │               theme-custom.less                             
-    │               theme-default.less                            
+    │               theme-default.less                            // 默认主题
     │               theme-navy.less                               
     │               theme-redbegonia.less                         
     │               theme-yahei.less                              
