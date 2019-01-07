@@ -1,4 +1,6 @@
 # my-mailefengle-gallery
+ 
+![](https://img.shields.io/badge/node-%3E%3D6.0-brightgreen.svg) ![](https://img.shields.io/badge/npm-v3.5.0-blue.svg) ![](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg) ![](https://img.shields.io/badge/dependencies-up%20to%20date-green.svg) ![](https://img.shields.io/badge/dev%20dependencies-up%20to%20date-green.svg)
 
 此前发布了两个小白入手vue项目的栗子:
 > vue-cli + ElementUI + Less的demo: https://github.com/YuFy1314/vue-cli-demo
