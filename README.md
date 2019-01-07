@@ -107,8 +107,7 @@
 vue2 + vuex + vue-router + vue-resource + Webpack + ESNext + Muse-ui + Less + Flex + Bootstrap + JQuery
 
 ## 首要任务
-#### 注意：由于涉及大量的 ESNext 的新属性，node 需要 6.0 以上版本
-首先你需要安装Node.js，点击打开Node.js下载页面，推荐安装最新版，本项目中使用的是v10.8.0。安装完Node.js后，会自带npm包管理器。
+首先你需要安装Node.js，本项目中使用的是v10.8.0。安装完Node.js后，会自带npm包管理器。
 如果这两个你都有了就直接走下一步☟☟☟
 ## 安装依赖
 > npm install
