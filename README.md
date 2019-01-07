@@ -120,3 +120,11 @@ vue2 + vuex + vue-router + vue-resource + Webpack + ESNext + Muse-ui + Less + Fl
 地址输入localhost:8080  就可以看到项目运行成功了
 ## 项目运行效果
 [预览项目猛戳](https://yufy1314.github.io/my-mailefengle-gallery/)（请用chrome手机模式预览）
+
+![](https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154453_Gallery.gif)
+
+![](https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154701_Gallery.gif)
+
+![](https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154805_Gallery.gif)
+
+![](https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154839_Gallery.gif)
