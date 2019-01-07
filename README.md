@@ -4,7 +4,8 @@
 
 此前发布了两个小白入手vue项目的栗子:
 > vue-cli + ElementUI + Less的demo: https://github.com/YuFy1314/vue-cli-demo
-基于vue 2.x + webpack 4.x 配置的demo: https://github.com/YuFy1314/my-webpack-project
+
+> 基于vue 2.x + webpack 4.x 配置的demo: https://github.com/YuFy1314/my-webpack-project
 
 这个项目主要是为了进一步熟悉vue项目的开发, 既然经过上面的两个案例知道了vue项目如何开发以及简单的项目的基本配置构建, 那么现在这个项目就是要知道整个Vue项目的开发流程以及构建, 还有结合Vue全家桶如何开发, 开发的过程中, 项目的结构也是至关重要
 
