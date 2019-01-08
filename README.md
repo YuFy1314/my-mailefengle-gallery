@@ -1,3 +1,4 @@
+ <p align="center"><a href="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154453_Gallery.gif"><img src="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154453_Gallery.gif" /></a></p>
 <h1 align="center">my-mailefengle-gallery</h1>
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/node-%3E%3D6.0-brightgreen.svg" alt="Version"></a>
@@ -125,7 +126,6 @@ vue2 + vuex + vue-router + vue-resource + Webpack + ESNext + Muse-ui + Less + Fl
 地址输入localhost:8080  就可以看到项目运行成功了
 ## 项目运行效果
 [预览项目猛戳](https://yufy1314.github.io/my-mailefengle-gallery/)（请用chrome手机模式预览）
- <p align="center"><a href="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154453_Gallery.gif"><img src="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154453_Gallery.gif" /></a></p>
  <p align="center"><a href="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154701_Gallery.gif"><img src="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154701_Gallery.gif" /></a></p>
  <p align="center"><a href="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154805_Gallery.gif"><img src="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154805_Gallery.gif" /></a></p>
  <p align="center"><a href="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154839_Gallery.gif"><img src="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154839_Gallery.gif" /></a></p>
