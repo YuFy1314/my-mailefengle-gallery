@@ -1,6 +1,11 @@
-# my-mailefengle-gallery
- 
-![](https://img.shields.io/badge/node-%3E%3D6.0-brightgreen.svg) ![](https://img.shields.io/badge/npm-v3.5.0-blue.svg) ![](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg) ![](https://img.shields.io/badge/dependencies-up%20to%20date-green.svg) ![](https://img.shields.io/badge/dev%20dependencies-up%20to%20date-green.svg)
+<h1 align="center">my-mailefengle-gallery</h1>
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/node-%3E%3D6.0-brightgreen.svg" alt="Version"></a>
+   <a href="#"><img src="https://img.shields.io/badge/npm-v3.5.0-blue.svg"></a>
+  <a href="#"><img src="https://img.shields.io/appveyor/ci/gruntjs/grunt.svg" alt="build"></a>
+<a href="#"><img src="https://img.shields.io/badge/dependencies-up%20to%20date-green.svg" alt="Dependencies"></a>
+ <a href="#"><img src="https://img.shields.io/badge/dev%20dependencies-up%20to%20date-green.svg" alt="Dev Dependencies"></a>
+</p>
 
 此前发布了两个小白入手vue项目的栗子:
 > vue-cli + ElementUI + Less的demo: https://github.com/YuFy1314/vue-cli-demo
@@ -120,11 +125,7 @@ vue2 + vuex + vue-router + vue-resource + Webpack + ESNext + Muse-ui + Less + Fl
 地址输入localhost:8080  就可以看到项目运行成功了
 ## 项目运行效果
 [预览项目猛戳](https://yufy1314.github.io/my-mailefengle-gallery/)（请用chrome手机模式预览）
-
-![](https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154453_Gallery.gif)
-
-![](https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154701_Gallery.gif)
-
-![](https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154805_Gallery.gif)
-
-![](https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154839_Gallery.gif)
+ <p align="center"><a href="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154453_Gallery.gif"><img src="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154453_Gallery.gif" /></a></p>
+ <p align="center"><a href="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154701_Gallery.gif"><img src="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154701_Gallery.gif" /></a></p>
+ <p align="center"><a href="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154805_Gallery.gif"><img src="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154805_Gallery.gif" /></a></p>
+ <p align="center"><a href="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154839_Gallery.gif"><img src="https://github.com/YuFy1314/my-mailefengle-gallery/blob/master/src/assets/images/SmartSelect_20190107-154839_Gallery.gif" /></a></p>
