@@ -29,7 +29,7 @@ vue2 + vuex + vue-router + vue-resource + Webpack + ESNext + Muse-ui + Less + Fl
 
 ## 文档
 
-关于该项目的详细说明文档请参考 [wiki](https://github.com/YuFy1314/my-mailefengle-gallery/wiki)
+这里是关于该项目的[详细说明文档](https://github.com/YuFy1314/my-mailefengle-gallery/wiki)
 
 ## 项目运行效果
 [预览项目猛戳](https://yufy1314.github.io/my-mailefengle-gallery/)（请用chrome手机模式预览）<br/>
