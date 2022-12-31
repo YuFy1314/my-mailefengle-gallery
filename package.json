@@ -23,17 +23,17 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "css-loader": "^1.0.1",
-    "file-loader": "^2.0.0",
-    "html-webpack-plugin": "^3.2.0",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "less": "^3.8.1",
-    "less-loader": "^4.1.0",
-    "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
-    "vue-loader": "^15.4.2",
+    "less-loader": "^11.1.0",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^17.0.1",
     "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.1.10"
   }
 }
